@@ -10,6 +10,7 @@ Actually, my task was only to create a single-page website containing informatio
     <center align="center">
       <img width="941" height="493" alt="image" src="https://github.com/user-attachments/assets/5680dad3-8afb-4e20-8caf-732fc9079596" />
     </center>
+    
     <center>
     Main Page
     </center>
