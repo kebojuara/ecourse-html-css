@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Daftar - IB Course</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="auth-page">
+    <div class="form-container">
+        <div class="tab-nav">
+            <a href="#" id="login-tab" onclick="showForm('login')">Login</a>
+            <a href="#" id="signup-tab" onclick="showForm('signup')">Daftar</a>
+        </div>
+        <div class="form-sections-wrapper">
+            <div id="loginForm" class="form-section">
+                <h2 class="title">Form Login</h2>
+                <form>
+                    <input type="email" placeholder="Alamat Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <div style="text-align: right; margin-top: 10px;">
+                        <a href="#" style="color:var(--blue); font-size:14px; text-decoration:none">Lupa Password?</a>
+                    </div>
+                    <button class="btn" type="submit" style="margin-top:20px;">Login</button>
+                </form>
+                <div style="margin-top:20px; text-align: center; position:relative;">
+                  <span style="display:inline-block; background:var(--card); padding:0 10px; z-index:2; position:relative; color:var(--muted); font-size:14px;">atau</span>
+                  <hr style="position:absolute; top:50%; left:0; width:100%; border:0; border-top:1px solid #eef; z-index:1;"/>
+                </div>
+                <div style="display:grid; gap:10px; margin-top:20px;">
+                    <a href="#" class="btn ghost social-login">
+                        <i class="fab fa-google"></i> Login dengan Google
+                    </a>
+                    <a href="#" class="btn ghost social-login">
+                        <i class="fab fa-whatsapp"></i> Login dengan WhatsApp
+                    </a>
+                </div>
+                <div class="link-text">Bukan Member? <a href="#" onclick="showForm('signup')">Daftar Sekarang</a></div>
+            </div>
+            <div id="signupForm" class="form-section">
+                <h2 class="title">Form Registrasi</h2>
+                <form>
+                    <input type="text" placeholder="Nama Lengkap" required>
+                    <input type="text" placeholder="Profesi" required>
+                    <input type="text" placeholder="Username" required>
+                    <input type="tel" placeholder="Nomor Telepon" required>
+                    <input type="email" placeholder="Alamat Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <input type="password" placeholder="Konfirmasi Password" required>
+                    <button class="btn" type="submit">Daftar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        function showForm(formId) {
+            document.querySelectorAll('.form-section').forEach(form => {
+                form.style.display = 'none';
+            });
+            document.getElementById(formId + 'Form').style.display = 'block';
+            document.querySelectorAll('.tab-nav a').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelector(`#${formId}-tab`).classList.add('active');
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const formType = params.get('form');
+            if (formType === 'register') {
+                showForm('signup');
+            } else {
+                showForm('login');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Course - IB Course</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <div class="logo">IB</div>
+      <div>
+        <div class="title-text" style="font-weight:700">IB Course</div>
+        <div style="font-size:12px;color:var(--muted)">Institut Bahagia</div>
+      </div>
+    </div>
+    <div class="nav-right">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#course">Course</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="forum.html">Forum</a></li>
+          <li><a href="loginregis.html?form=login">Login</a></li>
+        </ul>
+      </nav>
+      <div class="cta">
+        <a class="btn" href="loginregis.html?form=register">Daftar Sekarang</a>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="container">
+  <section id="course" style="padding-top: 30px;">
+    <h1>Daftar Course</h1>
+    <div class="course-grid">
+      <div class="card course-card" data-url="https://www.w3schools.com/html/">
+        <div class="course-image" style="background-image: url('images/html.jpg');">
+          <div class="badge-overlay">
+            <span class="badge">Beginner</span>
+            <span class="badge free">Free</span>
+          </div>
+        </div>
+        <div class="course-info">
+          <h3>Web Programming:</h3>
+		  <h3>HTML</h3>
+          <div class="rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <div class="course-meta">
+            <span><i>🕒</i> 3 - 7 Hari</span>
+            <span><i>👤</i> by IB Course Official</span>
+          </div>
+        </div>
+      </div>
+      <div class="card course-card" data-url="https://www.w3schools.com/css/">
+        <div class="course-image" style="background-image: url('images/css.jpg');">
+          <div class="badge-overlay">
+            <span class="badge">Beginner</span>
+            <span class="badge free">Free</span>
+          </div>
+        </div>
+        <div class="course-info">
+          <h3>Web Programming: </h3>
+		  <h3>CSS</h3>
+          <div class="rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <div class="course-meta">
+            <span><i>🕒</i> 3 - 7 Hari</span>
+            <span><i>👤</i> by IB Course Official</span>
+          </div>
+        </div>
+      </div>
+      <div class="card course-card" data-url="https://www.w3schools.com/js/">
+        <div class="course-image" style="background-image: url('images/javascript.jpg');">
+          <div class="badge-overlay">
+            <span class="badge">Beginner</span>
+            <span class="badge free">Free</span>
+          </div>
+        </div>
+        <div class="course-info">
+          <h3>Web Programming:</h3>
+		  <h3>JavaScript</h3>
+          <div class="rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <div class="course-meta">
+            <span><i>🕒</i> 3 - 7 Hari</span>
+            <span><i>👤</i> by IB Course Official</span>
+          </div>
+        </div>
+      </div>
+      <div class="card course-card" data-url="https://www.w3schools.com/php/">
+        <div class="course-image" style="background-image: url('images/php.jpg');">
+          <div class="badge-overlay">
+            <span class="badge">Beginner</span>
+            <span class="badge free">Free</span>
+          </div>
+        </div>
+        <div class="course-info">
+          <h3>Web Programming:</h3> 
+		  <h3>PHP</h3>
+          <div class="rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <div class="course-meta">
+            <span><i>🕒</i> 3 - 7 Hari</span>
+            <span><i>👤</i> by IB Course Official</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="container small">© 2025 IB Course — Institut Bahagia</div>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const courseCards = document.querySelectorAll('.course-card');
+    courseCards.forEach(card => {
+      card.style.cursor = 'pointer';
+      card.addEventListener('click', () => {
+        const url = card.getAttribute('data-url');
+        if (url) {
+          window.open(url, '_blank');
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>

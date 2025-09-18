@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Forum - IB Course</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <div class="logo">IB</div>
+      <div>
+        <div class="title-text" style="font-weight:700">IB Course</div>
+        <div style="font-size:12px;color:var(--muted)">Institut Bahagia</div>
+      </div>
+    </div>
+    <div class="nav-right">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="course.html">Course</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="#forum">Forum</a></li>
+          <li><a href="loginregis.html?form=login">Login</a></li>
+        </ul>
+      </nav>
+      <div class="cta">
+        <a class="btn" href="loginregis.html?form=register">Daftar Sekarang</a>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="container">
+  <div class="forum-hero">
+    <h2 class="forum-title">Selamat Datang di IB Course Forum</h2>
+    <div class="stats-container">
+      <div class="stat-card teal-bg">
+        <p class="stat-number">10,750</p>
+        <p class="stat-label">Pertanyaan Terjawab</p>
+      </div>
+      <div class="stat-card orange-bg">
+        <p class="stat-number">11,825</p>
+        <p class="stat-label">Total Posts</p>
+      </div>
+      <div class="stat-card red-bg">
+        <p class="stat-number">45</p>
+        <p class="stat-label">Online Users</p>
+      </div>
+    </div>
+  </div>
+  <div class="forum-nav-tabs">
+    <a href="#" class="tab-item active" data-tab="popular" onclick="showTab('popular')">Popular</a>
+    <a href="#" class="tab-item" data-tab="new-posts" onclick="showTab('new-posts')">New posts</a>
+    <a href="#" class="tab-item" data-tab="members" onclick="showTab('members')">Members</a>
+    <a href="loginregis.html?form=login" class="tab-item login-btn">Login</a>
+  </div>
+  <section id="forum-content">
+    <div id="popular" class="tab-content active">
+      <div class="forum-list">
+        <div class="forum-header">
+          <div class="forum-col">Forum</div>
+          <div class="forum-col">Topik</div>
+          <div class="forum-col">Posts</div>
+          <div class="forum-col">Last post</div>
+        </div>
+        <div class="forum-row">
+          <div class="forum-col main-col">
+            <div class="forum-icon">🔔</div>
+            <div class="forum-info">
+              <strong>Pengumuman Resmi</strong>
+              <p class="small">Belajar Web Programming untuk Pemula sudah bisa diakses.</p>
+            </div>
+          </div>
+          <div class="forum-col">350</div>
+          <div class="forum-col">2100</div>
+          <div class="forum-col last-post-info">
+            <a href="#">Re: Update Terbaru untuk Modul Web...</a>
+            <p class="small">oleh <strong>Admin</strong></p>
+            <p class="small">Kam, 12 Feb 2025 10:30 am</p>
+          </div>
+        </div>
+        <div class="forum-row">
+          <div class="forum-col main-col">
+            <div class="forum-icon">🌐</div>
+            <div class="forum-info">
+              <strong>Topik Umum</strong>
+              <p class="small">Diskusi umum tentang pemrograman.</p>
+            </div>
+          </div>
+          <div class="forum-col">4200</div>
+          <div class="forum-col">6500</div>
+          <div class="forum-col last-post-info">
+            <a href="#">Diskusi tentang UI/UX</a>
+            <p class="small">oleh <strong>IT_Geeks</strong></p>
+            <p class="small">Kam, 07 Agu 2025 03:45 pm</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="new-posts" class="tab-content">
+      <h4 class="forum-subtitle">POSTS TERBARU</h4>
+      <div class="new-posts-list">
+        <div class="post-item">
+          <div class="post-title">Bagaimana cara mengatasi bug pada JavaScript?</div>
+          <div class="post-meta">oleh <a href="#">Budi</a> - 5 menit yang lalu</div>
+        </div>
+        <div class="post-item">
+          <div class="post-title">Pertanyaan tentang CSS Grid untuk layout</div>
+          <div class="post-meta">oleh <a href="#">Siti</a> - 1 jam yang lalu</div>
+        </div>
+        <div class="post-item">
+          <div class="post-title">Rekomendasi tool untuk debugging PHP</div>
+          <div class="post-meta">oleh <a href="#">Ahmad</a> - 3 jam yang lalu</div>
+        </div>
+        <div class="post-item">
+          <div class="post-title">Tanya: Apa perbedaan antara var, let, dan const?</div>
+          <div class="post-meta">oleh <a href="#">Dika</a> - 5 jam yang lalu</div>
+        </div>
+        <div class="post-item">
+          <div class="post-title">Materi HTML dasar yang paling penting?</div>
+          <div class="post-meta">oleh <a href="#">Rina</a> - 8 jam yang lalu</div>
+        </div>
+        <div class="post-item">
+          <div class="post-title">Bagaimana cara koneksi PHP ke database MySQL?</div>
+          <div class="post-meta">oleh <a href="#">Joko</a> - 1 hari yang lalu</div>
+        </div>
+        <div class="post-item">
+          <div class="post-title">Apa itu RESTful API?</div>
+          <div class="post-meta">oleh <a href="#">ApiLover</a> - 2 hari yang lalu</div>
+        </div>
+        <div class="post-item">
+          <div class="post-title">Sertifikat dari kursus ini diakui secara internasional?</div>
+          <div class="post-meta">oleh <a href="#">Newbie_Dev</a> - 3 hari yang lalu</div>
+        </div>
+        <div class="post-item">
+          <div class="post-title">Apakah JavaScript itu sama dengan Java?</div>
+          <div class="post-meta">oleh <a href="#">JavaScripter</a> - 3 hari yang lalu</div>
+        </div>
+        <div class="post-item">
+          <div class="post-title">Bagaimana cara membuat animasi sederhana dengan CSS?</div>
+          <div class="post-meta">oleh <a href="#">Anima_trix</a> - 4 hari yang lalu</div>
+        </div>
+        <div class="post-item">
+          <div class="post-title">Perbedaan antara framework dan library</div>
+          <div class="post-meta">oleh <a href="#">FrameworkFan</a> - 5 hari yang lalu</div>
+        </div>
+        <div class="post-item">
+          <div class="post-title">Mencari partner untuk project web!</div>
+          <div class="post-meta">oleh <a href="#">ProjectHunter</a> - 5 hari yang lalu</div>
+        </div>
+        <div class="post-item">
+          <div class="post-title">Apa itu Git dan GitHub?</div>
+          <div class="post-meta">oleh <a href="#">GitNewbie</a> - 6 hari yang lalu</div>
+        </div>
+        <div class="post-item">
+          <div class="post-title">Cara memajukan karier sebagai Web Developer</div>
+          <div class="post-meta">oleh <a href="#">KarierPro</a> - 6 hari yang lalu</div>
+        </div>
+        <div class="post-item">
+          <div class="post-title">Tanya: Mengapa website saya lambat?</div>
+          <div class="post-meta">oleh <a href="#">Speedy</a> - 7 hari yang lalu</div>
+        </div>
+        <div class="post-item">
+          <div class="post-title">Rekomendasi text editor untuk koding</div>
+          <div class="post-meta">oleh <a href="#">ToolLover</a> - 7 hari yang lalu</div>
+        </div>
+        <div class="post-item">
+          <div class="post-title">Fungsi array di PHP</div>
+          <div class="post-meta">oleh <a href="#">PhpDev</a> - 8 hari yang lalu</div>
+        </div>
+        <div class="post-item">
+          <div class="post-title">Bagaimana cara membuat website responsif?</div>
+          <div class="post-meta">oleh <a href="#">ResponsiveWeb</a> - 8 hari yang lalu</div>
+        </div>
+        <div class="post-item">
+          <div class="post-title">Konsep dasar database MySQL</div>
+          <div class="post-meta">oleh <a href="#">DBMaster</a> - 9 hari yang lalu</div>
+        </div>
+        <div class="post-item">
+          <div class="post-title">Keamanan dasar website</div>
+          <div class="post-meta">oleh <a href="#">SecurityGeek</a> - 9 hari yang lalu</div>
+        </div>
+        <div class="post-item">
+          <div class="post-title">Pertanyaan tentang user experience (UX)</div>
+          <div class="post-meta">oleh <a href="#">UX_Designer</a> - 10 hari yang lalu</div>
+        </div>
+        <div class="post-item">
+          <div class="post-title">Apa itu Bootstrap?</div>
+          <div class="post-meta">oleh <a href="#">Bootstrapper</a> - 10 hari yang lalu</div>
+        </div>
+        <div class="post-item">
+          <div class="post-title">Cara mudah belajar JavaScript untuk pemula</div>
+          <div class="post-meta">oleh <a href="#">JSNewbie</a> - 11 hari yang lalu</div>
+        </div>
+        <div class="post-item">
+          <div class="post-title">Struktur dasar HTML5</div>
+          <div class="post-meta">oleh <a href="#">HTMLGeek</a> - 11 hari yang lalu</div>
+        </div>
+        <div class="post-item">
+          <div class="post-title">Tips & trik untuk menulis kode yang bersih</div>
+          <div class="post-meta">oleh <a href="#">CleanCoder</a> - 12 hari yang lalu</div>
+        </div>
+      </div>
+    </div>
+    <div id="members" class="tab-content">
+      <h4 class="forum-subtitle">DAFTAR ANGGOTA (250)</h4>
+      <input type="text" id="member-search" placeholder="Cari anggota..." onkeyup="searchMembers()">
+      <table class="members-table">
+        <thead>
+          <tr>
+            <th>No.</th>
+            <th>Username</th>
+            <th>Posts</th>
+            <th>Join</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Web_Explorer</td><td>47</td><td>15/01/2018</td></tr>
+          <tr><td>2</td><td>KodeKu</td><td>81</td><td>22/01/2018</td></tr>
+          <tr><td>3</td><td>FrontEndFighter</td><td>63</td><td>28/01/2018</td></tr>
+          <tr><td>4</td><td>BackEndBoss</td><td>77</td><td>05/02/2018</td></tr>
+          <tr><td>5</td><td>HTML_Master</td><td>120</td><td>11/02/2018</td></tr>
+          <tr><td>6</td><td>CSS_Wizard</td><td>95</td><td>18/02/2018</td></tr>
+          <tr><td>7</td><td>JS_Jedi</td><td>155</td><td>25/02/2018</td></tr>
+          <tr><td>8</td><td>React_Ranger</td><td>210</td><td>03/03/2018</td></tr>
+          <tr><td>9</td><td>Vue_Virtuoso</td><td>180</td><td>10/03/2018</td></tr>
+          <tr><td>10</td><td>Angular_Ace</td><td>140</td><td>17/03/2018</td></tr>
+          <tr><td>11</td><td>Python_Pro</td><td>112</td><td>24/03/2018</td></tr>
+          <tr><td>12</td><td>PHP_Phoenix</td><td>138</td><td>31/03/2018</td></tr>
+          <tr><td>13</td><td>SQL_Savvy</td><td>190</td><td>07/04/2018</td></tr>
+          <tr><td>14</td><td>Node_Ninja</td><td>250</td><td>14/04/2018</td></tr>
+          <tr><td>15</td><td>Git_Gud</td><td>85</td><td>21/04/2018</td></tr>
+          <tr><td>16</td><td>Dev_Dreamer</td><td>70</td><td>28/04/2018</td></tr>
+          <tr><td>17</td><td>Code_Slinger</td><td>110</td><td>05/05/2018</td></tr>
+          <tr><td>18</td><td>Bug_Buster</td><td>98</td><td>12/05/2018</td></tr>
+          <tr><td>19</td><td>Algo_Architect</td><td>165</td><td>19/05/2018</td></tr>
+          <tr><td>20</td><td>Web_Whiz</td><td>205</td><td>26/05/2018</td></tr>
+          <tr><td>21</td><td>Siti</td><td>32</td><td>02/06/2018</td></tr>
+          <tr><td>22</td><td>ResponsiveWeb</td><td>49</td><td>09/06/2018</td></tr>
+          <tr><td>23</td><td>CleanCoder</td><td>78</td><td>16/06/2018</td></tr>
+          <tr><td>24</td><td>ProjectHunter</td><td>135</td><td>23/06/2018</td></tr>
+          <tr><td>25</td><td>Joko</td><td>102</td><td>30/06/2018</td></tr>
+          <tr><td>26</td><td>Ahmad</td><td>90</td><td>07/07/2018</td></tr>
+          <tr><td>27</td><td>Rina</td><td>88</td><td>14/07/2018</td></tr>
+          <tr><td>28</td><td>Budi</td><td>115</td><td>21/07/2018</td></tr>
+          <tr><td>29</td><td>Dika</td><td>67</td><td>28/07/2018</td></tr>
+          <tr><td>30</td><td>ApiLover</td><td>142</td><td>04/08/2018</td></tr>
+          <tr><td>31</td><td>Newbie_Dev</td><td>58</td><td>11/08/2018</td></tr>
+          <tr><td>32</td><td>JavaScripter</td><td>93</td><td>18/08/2018</td></tr>
+          <tr><td>33</td><td>Anima_trix</td><td>175</td><td>25/08/2018</td></tr>
+          <tr><td>34</td><td>FrameworkFan</td><td>198</td><td>01/09/2018</td></tr>
+          <tr><td>35</td><td>GitNewbie</td><td>72</td><td>08/09/2018</td></tr>
+          <tr><td>36</td><td>KarierPro</td><td>160</td><td>15/09/2018</td></tr>
+          <tr><td>37</td><td>Speedy</td><td>215</td><td>22/09/2018</td></tr>
+          <tr><td>38</td><td>ToolLover</td><td>125</td><td>29/09/2018</td></tr>
+          <tr><td>39</td><td>PhpDev</td><td>188</td><td>06/10/2018</td></tr>
+          <tr><td>40</td><td>DBMaster</td><td>230</td><td>13/10/2018</td></tr>
+          <tr><td>41</td><td>SecurityGeek</td><td>145</td><td>20/10/2018</td></tr>
+          <tr><td>42</td><td>UX_Designer</td><td>178</td><td>27/10/2018</td></tr>
+          <tr><td>43</td><td>Bootstrapper</td><td>98</td><td>03/11/2018</td></tr>
+          <tr><td>44</td><td>JSNewbie</td><td>54</td><td>10/11/2018</td></tr>
+          <tr><td>45</td><td>HTMLGeek</td><td>71</td><td>17/11/2018</td></tr>
+          <tr><td>46</td><td>Koding_Kucing</td><td>105</td><td>24/11/2018</td></tr>
+          <tr><td>47</td><td>Programmer_Panda</td><td>130</td><td>01/12/2018</td></tr>
+          <tr><td>48</td><td>IT_Geeks</td><td>270</td><td>08/12/2018</td></tr>
+          <tr><td>49</td><td>Code_Warrior</td><td>225</td><td>15/12/2018</td></tr>
+          <tr><td>50</td><td>Cyber_Crusader</td><td>190</td><td>22/12/2018</td></tr>
+          <tr><td>51</td><td>Data_Dynamo</td><td>118</td><td>29/12/2018</td></tr>
+          <tr><td>52</td><td>FullStack_Fox</td><td>245</td><td>05/01/2019</td></tr>
+          <tr><td>53</td><td>Geek_Genius</td><td>188</td><td>12/01/2019</td></tr>
+          <tr><td>54</td><td>Hacker_Hero</td><td>175</td><td>19/01/2019</td></tr>
+          <tr><td>55</td><td>Info_Innovator</td><td>152</td><td>26/01/2019</td></tr>
+          <tr><td>56</td><td>Jago_Jaringan</td><td>139</td><td>02/02/2019</td></tr>
+          <tr><td>57</td><td>Kreator_Kode</td><td>167</td><td>09/02/2019</td></tr>
+          <tr><td>58</td><td>Logika_Lover</td><td>203</td><td>16/02/2019</td></tr>
+          <tr><td>59</td><td>Master_Mesin</td><td>221</td><td>23/02/2019</td></tr>
+          <tr><td>60</td><td>Net_Novice</td><td>108</td><td>02/03/2019</td></tr>
+          <tr><td>61</td><td>Online_Orca</td><td>149</td><td>09/03/2019</td></tr>
+          <tr><td>62</td><td>Program_Paladin</td><td>182</td><td>16/03/2019</td></tr>
+          <tr><td>63</td><td>Query_Queen</td><td>215</td><td>23/03/2019</td></tr>
+          <tr><td>64</td><td>Router_Rider</td><td>195</td><td>30/03/2019</td></tr>
+          <tr><td>65</td><td>Script_Sorceress</td><td>160</td><td>06/04/2019</td></tr>
+          <tr><td>66</td><td>Tekno_Titan</td><td>135</td><td>13/04/2019</td></tr>
+          <tr><td>67</td><td>User_Unicorn</td><td>110</td><td>20/04/2019</td></tr>
+          <tr><td>68</td><td>Vektor_Voyager</td><td>140</td><td>27/04/2019</td></tr>
+          <tr><td>69</td><td>Web_Wanderer</td><td>168</td><td>04/05/2019</td></tr>
+          <tr><td>70</td><td>X-Code_Xenomorph</td><td>192</td><td>11/05/2019</td></tr>
+          <tr><td>71</td><td>Yottabyte_Yeti</td><td>220</td><td>18/05/2019</td></tr>
+          <tr><td>72</td><td>Zetta_Zebra</td><td>240</td><td>25/05/2019</td></tr>
+          <tr><td>73</td><td>IT_Savy</td><td>178</td><td>01/06/2019</td></tr>
+          <tr><td>74</td><td>Coder_Cat</td><td>155</td><td>08/06/2019</td></tr>
+          <tr><td>75</td><td>Pixel_Panda</td><td>128</td><td>15/06/2019</td></tr>
+          <tr><td>76</td><td>Binary_Bear</td><td>105</td><td>22/06/2019</td></tr>
+          <tr><td>77</td><td>Logic_Lion</td><td>92</td><td>29/06/2019</td></tr>
+          <tr><td>78</td><td>Script_Spider</td><td>114</td><td>06/07/2019</td></tr>
+          <tr><td>79</td><td>Debug_Duck</td><td>132</td><td>13/07/2019</td></tr>
+          <tr><td>80</td><td>Data_Doggo</td><td>158</td><td>20/07/2019</td></tr>
+          <tr><td>81</td><td>Tech_Tiger</td><td>187</td><td>27/07/2019</td></tr>
+          <tr><td>82</td><td>Web_Wolf</td><td>212</td><td>03/08/2019</td></tr>
+          <tr><td>83</td><td>Code_Crow</td><td>238</td><td>10/08/2019</td></tr>
+          <tr><td>84</td><td>Hacker_Hummingbird</td><td>255</td><td>17/08/2019</td></tr>
+          <tr><td>85</td><td>IT_Owl</td><td>241</td><td>24/08/2019</td></tr>
+          <tr><td>86</td><td>Dev_Dolphin</td><td>226</td><td>31/08/2019</td></tr>
+          <tr><td>87</td><td>Syntax_Squid</td><td>210</td><td>07/09/2019</td></tr>
+          <tr><td>88</td><td>Byte_Badger</td><td>194</td><td>14/09/2019</td></tr>
+          <tr><td>89</td><td>Pixel_Penguin</td><td>180</td><td>21/09/2019</td></tr>
+          <tr><td>90</td><td>Code_Kangaroo</td><td>165</td><td>28/09/2019</td></tr>
+          <tr><td>91</td><td>Data_Dragon</td><td>150</td><td>05/10/2019</td></tr>
+          <tr><td>92</td><td>Web_Walrus</td><td>135</td><td>12/10/2019</td></tr>
+          <tr><td>93</td><td>Tech_Toucan</td><td>120</td><td>19/10/2019</td></tr>
+          <tr><td>94</td><td>Bug_Buffalo</td><td>105</td><td>26/10/2019</td></tr>
+          <tr><td>95</td><td>Logic_Llama</td><td>90</td><td>02/11/2019</td></tr>
+          <tr><td>96</td><td>Script_Seal</td><td>75</td><td>09/11/2019</td></tr>
+          <tr><td>97</td><td>Dev_Deer</td><td>60</td><td>16/11/2019</td></tr>
+          <tr><td>98</td><td>Code_Coyote</td><td>45</td><td>23/11/2019</td></tr>
+          <tr><td>99</td><td>Data_Dodo</td><td>30</td><td>30/11/2019</td></tr>
+          <tr><td>100</td><td>Web_Wombat</td><td>15</td><td>07/12/2019</td></tr>
+          <tr><td>101</td><td>Tech_Tuna</td><td>55</td><td>14/12/2019</td></tr>
+          <tr><td>102</td><td>Pixel_Platypus</td><td>110</td><td>21/12/2019</td></tr>
+          <tr><td>103</td><td>Code_Condor</td><td>165</td><td>28/12/2019</td></tr>
+          <tr><td>104</td><td>Logic_Leopard</td><td>220</td><td>04/01/2020</td></tr>
+          <tr><td>105</td><td>Script_Snake</td><td>275</td><td>11/01/2020</td></tr>
+          <tr><td>106</td><td>Dev_Donkey</td><td>250</td><td>18/01/2020</td></tr>
+          <tr><td>107</td><td>Data_Duck</td><td>230</td><td>25/01/2020</td></tr>
+          <tr><td>108</td><td>Web_Whale</td><td>210</td><td>01/02/2020</td></tr>
+          <tr><td>109</td><td>Tech_Tortoise</td><td>190</td><td>08/02/2020</td></tr>
+          <tr><td>110</td><td>Bug_Bee</td><td>170</td><td>15/02/2020</td></tr>
+          <tr><td>111</td><td>Logic_Lemur</td><td>150</td><td>22/02/2020</td></tr>
+          <tr><td>112</td><td>Script_Squirrel</td><td>130</td><td>01/03/2020</td></tr>
+          <tr><td>113</td><td>Dev_Dog</td><td>110</td><td>08/03/2020</td></tr>
+          <tr><td>114</td><td>Code_Catfish</td><td>90</td><td>15/03/2020</td></tr>
+          <tr><td>115</td><td>Data_Dingo</td><td>70</td><td>22/03/2020</td></tr>
+          <tr><td>116</td><td>Web_Woodpecker</td><td>50</td><td>29/03/2020</td></tr>
+          <tr><td>117</td><td>Tech_Tarsier</td><td>30</td><td>05/04/2020</td></tr>
+          <tr><td>118</td><td>Pixel_Parrot</td><td>10</td><td>12/04/2020</td></tr>
+          <tr><td>119</td><td>Code_Caterpillar</td><td>200</td><td>19/04/2020</td></tr>
+          <tr><td>120</td><td>Logic_Lobster</td><td>240</td><td>26/04/2020</td></tr>
+          <tr><td>121</td><td>Script_Snail</td><td>280</td><td>03/05/2020</td></tr>
+          <tr><td>122</td><td>Dev_Dolphin</td><td>300</td><td>10/05/2020</td></tr>
+          <tr><td>123</td><td>Data_Dolphin</td><td>280</td><td>17/05/2020</td></tr>
+          <tr><td>124</td><td>Web_Wolf</td><td>260</td><td>24/05/2020</td></tr>
+          <tr><td>125</td><td>Tech_Tiger</td><td>240</td><td>31/05/2020</td></tr>
+          <tr><td>126</td><td>Bug_Badger</td><td>220</td><td>07/06/2020</td></tr>
+          <tr><td>127</td><td>Logic_Lizard</td><td>200</td><td>14/06/2020</td></tr>
+          <tr><td>128</td><td>Script_Salamander</td><td>180</td><td>21/06/2020</td></tr>
+          <tr><td>129</td><td>Dev_Dragonfly</td><td>160</td><td>28/06/2020</td></tr>
+          <tr><td>130</td><td>Code_Cobra</td><td>140</td><td>05/07/2020</td></tr>
+          <tr><td>131</td><td>Data_Goat</td><td>120</td><td>12/07/2020</td></tr>
+          <tr><td>132</td><td>Web_Goose</td><td>100</td><td>19/07/2020</td></tr>
+          <tr><td>133</td><td>Tech_Hawk</td><td>80</td><td>26/07/2020</td></tr>
+          <tr><td>134</td><td>Pixel_Iguana</td><td>60</td><td>02/08/2020</td></tr>
+          <tr><td>135</td><td>Code_Jaguar</td><td>40</td><td>09/08/2020</td></tr>
+          <tr><td>136</td><td>Logic_Kangaroo</td><td>20</td><td>16/08/2020</td></tr>
+          <tr><td>137</td><td>Script_Koala</td><td>5</td><td>23/08/2020</td></tr>
+          <tr><td>138</td><td>Dev_Leopard</td><td>15</td><td>30/08/2020</td></tr>
+          <tr><td>139</td><td>Data_Lynx</td><td>25</td><td>06/09/2020</td></tr>
+          <tr><td>140</td><td>Web_Monkey</td><td>35</td><td>13/09/2020</td></tr>
+          <tr><td>141</td><td>Tech_Mouse</td><td>45</td><td>20/09/2020</td></tr>
+          <tr><td>142</td><td>Bug_Nighthawk</td><td>55</td><td>27/09/2020</td></tr>
+          <tr><td>143</td><td>Logic_Octopus</td><td>65</td><td>04/10/2020</td></tr>
+          <tr><td>144</td><td>Script_Otter</td><td>75</td><td>11/10/2020</td></tr>
+          <tr><td>145</td><td>Dev_Panda</td><td>85</td><td>18/10/2020</td></tr>
+          <tr><td>146</td><td>Code_Penguin</td><td>95</td><td>25/10/2020</td></tr>
+          <tr><td>147</td><td>Data_Phoenix</td><td>105</td><td>01/11/2020</td></tr>
+          <tr><td>148</td><td>Web_Platypus</td><td>115</td><td>08/11/2020</td></tr>
+          <tr><td>149</td><td>Tech_Quail</td><td>125</td><td>15/11/2020</td></tr>
+          <tr><td>150</td><td>Pixel_Rabbit</td><td>135</td><td>22/11/2020</td></tr>
+          <tr><td>151</td><td>Code_Raccoon</td><td>145</td><td>29/11/2020</td></tr>
+          <tr><td>152</td><td>Logic_Rhinoceros</td><td>155</td><td>06/12/2020</td></tr>
+          <tr><td>153</td><td>Script_Scorpion</td><td>165</td><td>13/12/2020</td></tr>
+          <tr><td>154</td><td>Dev_Shark</td><td>175</td><td>20/12/2020</td></tr>
+          <tr><td>155</td><td>Data_Sheep</td><td>185</td><td>27/12/2020</td></tr>
+          <tr><td>156</td><td>Web_Sloth</td><td>195</td><td>03/01/2021</td></tr>
+          <tr><td>157</td><td>Tech_Spider</td><td>205</td><td>10/01/2021</td></tr>
+          <tr><td>158</td><td>Bug_Squid</td><td>215</td><td>17/01/2021</td></tr>
+          <tr><td>159</td><td>Logic_Squirrel</td><td>225</td><td>24/01/2021</td></tr>
+          <tr><td>160</td><td>Script_Swan</td><td>235</td><td>31/01/2021</td></tr>
+          <tr><td>161</td><td>Dev_Tapir</td><td>245</td><td>07/02/2021</td></tr>
+          <tr><td>162</td><td>Code_Tiger</td><td>255</td><td>14/02/2021</td></tr>
+          <tr><td>163</td><td>Data_Tuna</td><td>265</td><td>21/02/2021</td></tr>
+          <tr><td>164</td><td>Web_Turtle</td><td>275</td><td>28/02/2021</td></tr>
+          <tr><td>165</td><td>Tech_Unicorn</td><td>285</td><td>07/03/2021</td></tr>
+          <tr><td>166</td><td>Pixel_Vampire</td><td>295</td><td>14/03/2021</td></tr>
+          <tr><td>167</td><td>Code_Vulture</td><td>305</td><td>21/03/2021</td></tr>
+          <tr><td>168</td><td>Logic_Walrus</td><td>315</td><td>28/03/2021</td></tr>
+          <tr><td>169</td><td>Script_Wolf</td><td>325</td><td>04/04/2021</td></tr>
+          <tr><td>170</td><td>Dev_Wombat</td><td>335</td><td>11/04/2021</td></tr>
+          <tr><td>171</td><td>Data_Wren</td><td>345</td><td>18/04/2021</td></tr>
+          <tr><td>172</td><td>Web_Yak</td><td>355</td><td>25/04/2021</td></tr>
+          <tr><td>173</td><td>Tech_Zebra</td><td>365</td><td>02/05/2021</td></tr>
+          <tr><td>174</td><td>Bug_Ant</td><td>375</td><td>09/05/2021</td></tr>
+          <tr><td>175</td><td>Logic_Badger</td><td>385</td><td>16/05/2021</td></tr>
+          <tr><td>176</td><td>Script_Bat</td><td>395</td><td>23/05/2021</td></tr>
+          <tr><td>177</td><td>Dev_Bear</td><td>405</td><td>30/05/2021</td></tr>
+          <tr><td>178</td><td>Code_Beaver</td><td>415</td><td>06/06/2021</td></tr>
+          <tr><td>179</td><td>Data_Bison</td><td>425</td><td>13/06/2021</td></tr>
+          <tr><td>180</td><td>Web_Boar</td><td>435</td><td>20/06/2021</td></tr>
+          <tr><td>181</td><td>Tech_Camel</td><td>445</td><td>27/06/2021</td></tr>
+          <tr><td>182</td><td>Pixel_Cat</td><td>455</td><td>04/07/2021</td></tr>
+          <tr><td>183</td><td>Code_Chimp</td><td>465</td><td>11/07/2021</td></tr>
+          <tr><td>184</td><td>Logic_Cobra</td><td>475</td><td>18/07/2021</td></tr>
+          <tr><td>185</td><td>Script_Coyote</td><td>485</td><td>25/07/2021</td></tr>
+          <tr><td>186</td><td>Dev_Crab</td><td>495</td><td>01/08/2021</td></tr>
+          <tr><td>187</td><td>Data_Crane</td><td>505</td><td>08/08/2021</td></tr>
+          <tr><td>188</td><td>Web_Crow</td><td>515</td><td>15/08/2021</td></tr>
+          <tr><td>189</td><td>Tech_Deer</td><td>525</td><td>22/08/2021</td></tr>
+          <tr><td>190</td><td>Bug_Dingo</td><td>535</td><td>29/08/2021</td></tr>
+          <tr><td>191</td><td>Logic_Dolphin</td><td>545</td><td>05/09/2021</td></tr>
+          <tr><td>192</td><td>Script_Donkey</td><td>555</td><td>12/09/2021</td></tr>
+          <tr><td>193</td><td>Dev_Dove</td><td>565</td><td>19/09/2021</td></tr>
+          <tr><td>194</td><td>Code_Dragon</td><td>575</td><td>26/09/2021</td></tr>
+          <tr><td>195</td><td>Data_Duck</td><td>585</td><td>03/10/2021</td></tr>
+          <tr><td>196</td><td>Web_Eagle</td><td>595</td><td>10/10/2021</td></tr>
+          <tr><td>197</td><td>Tech_Eel</td><td>605</td><td>17/10/2021</td></tr>
+          <tr><td>198</td><td>Bug_Elephant</td><td>615</td><td>24/10/2021</td></tr>
+          <tr><td>199</td><td>Logic_Falcon</td><td>625</td><td>31/10/2021</td></tr>
+          <tr><td>200</td><td>Script_Ferret</td><td>635</td><td>07/11/2021</td></tr>
+          <tr><td>201</td><td>Dev_Fox</td><td>645</td><td>14/11/2021</td></tr>
+          <tr><td>202</td><td>Code_Frog</td><td>655</td><td>21/11/2021</td></tr>
+          <tr><td>203</td><td>Data_Gazelle</td><td>665</td><td>28/11/2021</td></tr>
+          <tr><td>204</td><td>Web_Gecko</td><td>675</td><td>05/12/2021</td></tr>
+          <tr><td>205</td><td>Tech_Gibbon</td><td>685</td><td>12/12/2021</td></tr>
+          <tr><td>206</td><td>Pixel_Goat</td><td>695</td><td>19/12/2021</td></tr>
+          <tr><td>207</td><td>Code_Goose</td><td>705</td><td>26/12/2021</td></tr>
+          <tr><td>208</td><td>Logic_Gorilla</td><td>715</td><td>02/01/2022</td></tr>
+          <tr><td>209</td><td>Script_Grizzly</td><td>725</td><td>09/01/2022</td></tr>
+          <tr><td>210</td><td>Dev_Hamster</td><td>735</td><td>16/01/2022</td></tr>
+          <tr><td>211</td><td>Data_Hedgehog</td><td>745</td><td>23/01/2022</td></tr>
+          <tr><td>212</td><td>Web_Hippo</td><td>755</td><td>30/01/2022</td></tr>
+          <tr><td>213</td><td>Tech_Horse</td><td>765</td><td>06/02/2022</td></tr>
+          <tr><td>214</td><td>Bug_Hummingbird</td><td>775</td><td>13/02/2022</td></tr>
+          <tr><td>215</td><td>Logic_Hyena</td><td>785</td><td>20/02/2022</td></tr>
+          <tr><td>216</td><td>Script_Ibis</td><td>795</td><td>27/02/2022</td></tr>
+          <tr><td>217</td><td>Dev_Iguana</td><td>805</td><td>06/03/2022</td></tr>
+          <tr><td>218</td><td>Code_Impala</td><td>815</td><td>13/03/2022</td></tr>
+          <tr><td>219</td><td>Data_Jaguar</td><td>825</td><td>20/03/2022</td></tr>
+          <tr><td>220</td><td>Web_Jellyfish</td><td>835</td><td>27/03/2022</td></tr>
+          <tr><td>221</td><td>Tech_Kangaroo</td><td>845</td><td>03/04/2022</td></tr>
+          <tr><td>222</td><td>Pixel_Koala</td><td>855</td><td>10/04/2022</td></tr>
+          <tr><td>223</td><td>Code_Komodo</td><td>865</td><td>17/04/2022</td></tr>
+          <tr><td>224</td><td>Logic_Lemming</td><td>875</td><td>24/04/2022</td></tr>
+          <tr><td>225</td><td>Script_Lemur</td><td>885</td><td>01/05/2022</td></tr>
+          <tr><td>226</td><td>Dev_Leopard</td><td>895</td><td>08/05/2022</td></tr>
+          <tr><td>227</td><td>Data_Lion</td><td>905</td><td>15/05/2022</td></tr>
+          <tr><td>228</td><td>Web_Lizard</td><td>915</td><td>22/05/2022</td></tr>
+          <tr><td>229</td><td>Tech_Llama</td><td>925</td><td>29/05/2022</td></tr>
+          <tr><td>230</td><td>Bug_Manatee</td><td>935</td><td>05/06/2022</td></tr>
+          <tr><td>231</td><td>Logic_Marten</td><td>945</td><td>12/06/2022</td></tr>
+          <tr><td>232</td><td>Script_Mink</td><td>955</td><td>19/06/2022</td></tr>
+          <tr><td>233</td><td>Dev_Mongoose</td><td>965</td><td>26/06/2022</td></tr>
+          <tr><td>234</td><td>Code_Monkey</td><td>975</td><td>03/07/2022</td></tr>
+          <tr><td>235</td><td>Data_Moose</td><td>985</td><td>10/07/2022</td></tr>
+          <tr><td>236</td><td>Web_Mouse</td><td>995</td><td>17/07/2022</td></tr>
+          <tr><td>237</td><td>Tech_Mule</td><td>1005</td><td>24/07/2022</td></tr>
+          <tr><td>238</td><td>Pixel_Muskrat</td><td>1015</td><td>31/07/2022</td></tr>
+          <tr><td>239</td><td>Code_Narwhal</td><td>1025</td><td>07/08/2022</td></tr>
+          <tr><td>240</td><td>Logic_Newt</td><td>1035</td><td>14/08/2022</td></tr>
+          <tr><td>241</td><td>Script_Nightingale</td><td>1045</td><td>21/08/2022</td></tr>
+          <tr><td>242</td><td>Dev_Octopus</td><td>1055</td><td>28/08/2022</td></tr>
+          <tr><td>243</td><td>Data_Okapi</td><td>1065</td><td>04/09/2022</td></tr>
+          <tr><td>244</td><td>Web_Opossum</td><td>1075</td><td>11/09/2022</td></tr>
+          <tr><td>245</td>
+            <td>Tech_Otter</td>
+            <td>1085</td>
+            <td>18/09/2022</td>
+          </tr>
+          <tr><td>246</td>
+            <td>Bug_Owl</td>
+            <td>1095</td>
+            <td>25/09/2022</td>
+          </tr>
+          <tr><td>247</td>
+            <td>Logic_Pangolin</td>
+            <td>1105</td>
+            <td>02/10/2022</td>
+          </tr>
+          <tr><td>248</td>
+            <td>Script_Panther</td>
+            <td>1115</td>
+            <td>09/10/2022</td>
+          </tr>
+          <tr><td>249</td>
+            <td>Dev_Parrot</td>
+            <td>1125</td>
+            <td>16/10/2022</td>
+          </tr>
+          <tr><td>250</td>
+            <td>Code_Peacock</td>
+            <td>1135</td>
+            <td>23/10/2022</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section id="admin" style="margin-top:30px;display:none">
+    <div class="module">
+      <h3>Admin Panel (Simulasi)</h3>
+      <div class="small">Manajemen pengguna & upload materi (UI statis)</div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <div class="card" style="min-width:220px">
+          <strong>Pengguna</strong>
+          <div class="small">Total siswa: <span id="userCount">120</span></div>
+        </div>
+        <div class="card" style="min-width:220px">
+          <strong>Upload Materi</strong>
+          <div class="small">Upload video / file (UI saja)</div>
+          <div style="margin-top:8px"><input type="file" disabled /></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="container small">© 2025 IB Course — Institut Bahagia</div>
+</footer>
+<script>
+  function showTab(tabId) {
+    document.querySelectorAll('.tab-content').forEach(tab => {
+      tab.classList.remove('active');
+    });
+    document.getElementById(tabId).classList.add('active');
+    document.querySelectorAll('.tab-item').forEach(item => {
+      item.classList.remove('active');
+    });
+    document.querySelector(`.tab-item[data-tab="${tabId}"]`).classList.add('active');
+  }
+  function searchMembers() {
+    const input = document.getElementById('member-search');
+    const filter = input.value.toLowerCase();
+    const table = document.querySelector('.members-table');
+    const tr = table.getElementsByTagName('tr');
+    for (let i = 1; i < tr.length; i++) {
+      const td = tr[i].getElementsByTagName('td')[1];
+      if (td) {
+        const textValue = td.textContent || td.innerText;
+        if (textValue.toLowerCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+      }
+    }
+  }
+  function postQuestion(){
+    const title=document.getElementById('qtitle').value.trim();
+    const body=document.getElementById('qbody').value.trim();
+    if(!title||!body){alert('Isi judul & pertanyaan.');return}
+    const posts=document.getElementById('posts');
+    const node=document.createElement('div');
+    node.className='post';
+    node.innerHTML=`<strong>Anda</strong> <span class=\"small\">• baru saja</span><p class=\"small\">${escapeHtml(body)}</p><div class=\"small\">Balasan: menunggu instruktur...</div>`;
+    posts.prepend(node);
+    document.getElementById('qtitle').value='';
+    document.getElementById('qbody').value='';
+  }
+  function escapeHtml(str){ return str.replace(/[&"'<>]/g,function(m){return {'&':'&amp;','"':'&quot;','\'':'&#39;','<':'&lt;','>':'&gt;'}[m]}); }
+  (function(){
+    const params=new URLSearchParams(location.search);
+    if(params.get('admin')==='1'){
+      document.getElementById('admin').style.display='block';
+      document.getElementById('admin').scrollIntoView();
+    }
+  })();
+</script>
+</body>
+</html>
